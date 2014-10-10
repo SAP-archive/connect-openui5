@@ -1,6 +1,6 @@
 {
   "name": "connect-openui5",
-  "version": "0.1.0-pre",
+  "version": "0.1.0",
   "description": "Connect modules around OpenUI5",
   "scripts": {
     "test": "grunt"
