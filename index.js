@@ -22,6 +22,8 @@ module.exports = {
 
 	less: require('./lib/less'),
 
-	properties: require('./lib/properties')
+	properties: require('./lib/properties'),
+
+	proxy: require('./lib/proxy')
 
 };

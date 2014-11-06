@@ -24,14 +24,23 @@ module.exports = function(grunt) {
 				'Gruntfile.js',
 				'lib/*.js'
 			]
+		},
+
+		// Unit tests.
+		mochaTest: {
+			tests: {
+				src: ['test/*_test.js']
+			}
 		}
+
 
 	});
 
 	// These plugins provide necessary tasks.
 	grunt.loadNpmTasks('grunt-eslint');
+	grunt.loadNpmTasks('grunt-mocha-test');
 
 	// By default: lint.
-	grunt.registerTask('default', [ 'eslint']);
+	grunt.registerTask('default', [ 'eslint', 'mochaTest']);
 
 };
