@@ -16,12 +16,8 @@
 
 module.exports = {
 
-	context: require('./lib/context'),
-
 	discovery: require('./lib/discovery'),
-
 	less: require('./lib/less'),
-
 	properties: require('./lib/properties')
 
 };
