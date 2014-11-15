@@ -18,6 +18,7 @@ module.exports = {
 
 	discovery: require('./lib/discovery'),
 	less: require('./lib/less'),
-	properties: require('./lib/properties')
+	properties: require('./lib/properties'),
+	proxy: require('./lib/proxy')
 
 };
