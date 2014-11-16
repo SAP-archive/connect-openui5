@@ -35,7 +35,11 @@ app.use(middleware.properties());
 app.use('/proxy', middleware.proxy());
 
 // Provide discovery service (used in OpenUI5 testsuite)
-app.use('/discovery', middleware.discovery());
+app.use('/discovery', middleware.discovery({
+  appresources: [ 'path/to/app-resources' ],
+  resources: [ 'path/to/resources' ],
+  testresources: [ 'path/to/test-resources' ]
+}));
 
 // create node.js http server and listen on port
 http.createServer(app).listen(3000);
