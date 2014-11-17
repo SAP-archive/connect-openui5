@@ -154,7 +154,12 @@ Returns all `*.html`/`*.htm` pages located in the `testresources` folder(s).
 ```
 
 ## Contributing
+
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Release History
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## Lisense
 

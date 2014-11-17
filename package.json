@@ -6,6 +6,11 @@
     "test": "grunt"
   },
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib",
+    "LICENSE.txt"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/SAP/connect-openui5.git"
