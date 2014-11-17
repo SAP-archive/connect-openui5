@@ -25,7 +25,9 @@ var app = connect();
 var middleware = require('connect-openui5');
 
 // Compiles LESS themes on the fly
-app.use(middleware.less());
+app.use(middleware.less({
+  rootPaths: [ 'path/to/theme/resources' ]
+}));
 
 // Makes sure that properties files will be served with "Content-Type: text/plain; charset=ISO-8859-1"
 app.use(middleware.properties());
