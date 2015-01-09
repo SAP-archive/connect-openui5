@@ -79,6 +79,17 @@ Provides a generic proxy to consume resources from other origins without causing
 
 URL-Format `/{http|https}/{host}/{path}`
 
+### API
+
+#### proxy(options)
+
+##### options
+
+Type: `object`  
+Default: `{}`
+
+Options for [http-proxy](https://github.com/nodejitsu/node-http-proxy#options).
+
 ## discovery
 
 Provides a resource discovery service (consumed in the [OpenUI5 testsuite](https://github.com/SAP/openui5/tree/master/src/sap.ui.core/test/testsuite)).
