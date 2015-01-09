@@ -16,7 +16,7 @@
 		"quotes": [2, "single"],
 		"radix": 2,
 		"space-after-keywords": [2, "always"],
-		"space-unary-word-ops": 2,
+		"space-unary-ops": 2,
 		"wrap-iife": [2, "any"],
 
 		"block-scoped-var": 1,
@@ -41,7 +41,7 @@
 		"eol-last": 2,
 		"eqeqeq": 0,
 		"no-underscore-dangle": 0,
-		
+
 		"handle-callback-err": 0
 	}
 }
