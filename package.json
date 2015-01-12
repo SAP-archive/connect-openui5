@@ -1,6 +1,6 @@
 {
   "name": "connect-openui5",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Connect middleware for OpenUI5",
   "scripts": {
     "test": "grunt"

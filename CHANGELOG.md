@@ -1,3 +1,13 @@
+# 0.4.0 (2015-01-12)
+
+### Features
+- proxy middleware
+  - allow passing options for [http-proxy](https://github.com/nodejitsu/node-http-proxy#options) [`6ab9920`](https://github.com/SAP/connect-openui5/commit/6ab99201d5d2439ba55017ec8211b4dd8e5ed2a9)
+
+### All changes
+[`0.3.0...0.4.0`](https://github.com/SAP/connect-openui5/compare/0.3.0...0.4.0)
+
+
 # 0.3.0 (2014-11-17)
 
 ### Breaking changes
