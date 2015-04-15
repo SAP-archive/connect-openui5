@@ -5,7 +5,7 @@
 	"rules": {
 		"brace-style": [2, "1tbs", { "allowSingleLine": true }],
 		"consistent-this": 2,
-		"global-strict": 2,
+		"strict": [ 2, "global"],
 		"no-div-regex": 2,
 		"no-floating-decimal": 2,
 		"no-self-compare": 2,
