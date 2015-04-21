@@ -74,7 +74,7 @@ describe('proxy middleware should proxy generic requests', function () {
 
 		oAppToBeProxied.use(function (oRequest, oResponse) {
 			// x-forwareded headers are expected (see xfwd option in proxy config)
-			assert.equal(oRequest.headers['x-forwarded-for'], '127.0.0.1');
+			assert(oRequest.headers['x-forwarded-for'] === '127.0.0.1' || oRequest.headers['x-forwarded-for'] === '::ffff:127.0.0.1');
 			assert.equal(oRequest.headers['x-forwarded-port'], '8080');
 			assert.equal(oRequest.headers['x-forwarded-proto'], 'http');
 			sActualPath = oRequest.url;
