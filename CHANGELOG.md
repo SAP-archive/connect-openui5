@@ -1,3 +1,13 @@
+# 0.4.1 (2015-09-04)
+
+### Fixes
+- less middleware
+  - Extend default options rather than assign with provided options [`5ae50cd`](https://github.com/SAP/connect-openui5/commit/5ae50cd753ef5e2a3ba2807a70877ef79b6ce433)
+
+### All changes
+[`0.4.0...0.4.1`](https://github.com/SAP/connect-openui5/compare/0.4.0...0.4.1)
+
+
 # 0.4.0 (2015-01-12)
 
 ### Features
