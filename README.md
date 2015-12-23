@@ -81,7 +81,7 @@ URL-Format `/{http|https}/{host}/{path}`
 
 ### remote location
 
-The environment variable REMOTE_LOCATION allows setting a remote location (similar to the behaviour of the JAVA proxy).
+The environment variable REMOTE_LOCATION allows setting a remote location.
 
 Usage:
 Use a URL without the pattern `/{http|https}/{host}` and the proxy will use the environment variable REMOTE_LOCATION 

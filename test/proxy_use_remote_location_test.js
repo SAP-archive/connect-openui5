@@ -18,12 +18,17 @@
 var http = require('http');
 var assert = require('assert');
 var connect = require('connect');
-var proxy = require('../../').proxy;
 
-describe('IGNORE remote location', function () {
-	it('should proxy from one server to the server and IGNORE remote location', function (done) {
+//avoid spawning a new process
+delete require.cache[require.resolve('../lib/proxy')];
+process.env.REMOTE_LOCATION = 'http://localhost:8080';
+var proxy = require('../lib/proxy');
+delete require.cache[require.resolve('../lib/proxy')];
+
+describe('USE remote location', function () {
+	it('should proxy from one server to the server and USE remote location', function (done) {
 		//check environment
-		assert.equal(process.env.REMOTE_LOCATION,'http://localhost:8085');
+		assert.equal(proxy._env.remoteLocation,'http://localhost:8080');
 
 		var sExpectedResponse = 'All ok!',
 			sExpectedPath = '/foo/bar?pA=1&pB=2',
@@ -50,8 +55,8 @@ describe('IGNORE remote location', function () {
 		var oProxyServer = http.createServer(oProxyApp);
 		oProxyServer.listen(9000);
 
-		//should still proxy to port 8080 and not to port 8085
-		http.get('http://localhost:9000/http/localhost:8080' + sExpectedPath, function (oResponse) {
+		//should  proxy to port 8080
+		http.get('http://localhost:9000' + sExpectedPath, function (oResponse) {
 
 			oResponse.on('data', function(oData) {
 				sActualResponse += oData;
@@ -75,3 +80,4 @@ describe('IGNORE remote location', function () {
 		});
 	});
 });
+
