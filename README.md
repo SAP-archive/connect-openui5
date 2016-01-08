@@ -79,6 +79,24 @@ Provides a generic proxy to consume resources from other origins without causing
 
 URL-Format `/{http|https}/{host}/{path}`
 
+### remote location
+
+The environment variable REMOTE_LOCATION allows setting a remote location.
+
+Usage:
+Use a URL without the pattern `/{http|https}/{host}` and the proxy will use the environment variable REMOTE_LOCATION 
+to determine host and additional path information. Also query parameters can be added. 
+
+Sample:
+
+URL-Format: `/foo/bar?test=1234`
+
+REMOTE_LOCATION: `https://remotehost:1234/rfoo/rbar?rtest=1234`
+
+Composed URL send to remote host: `/rfoo/rbar/foo/bar?rtest=1234&test=1234`.
+
+The similar URL without using REMOTE_LOCATION would be `/https/remotehost:1234/rfoo/rbar/foo/bar?rtest=1234&test=1234`
+
 ### API
 
 #### proxy(options)
