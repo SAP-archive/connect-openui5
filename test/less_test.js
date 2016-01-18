@@ -31,7 +31,7 @@ describe('less middleware', function () {
 
 		var server = http.createServer(app).listen(8080);
 
-		http.get('http://localhost:8080/mytheme/library.css', function(res) {
+		http.get('http://localhost:8080/test/themes/mytheme/library.css', function(res) {
 			assert.equal(res.headers['content-type'], 'text/css');
 
 			var responseData = '';
@@ -41,7 +41,11 @@ describe('less middleware', function () {
 			});
 
 			res.on('end', function() {
-				assert.equal(responseData, '.myRule {\n  color: #000000;\n  float: left;\n}\n');
+				assert.equal(
+					responseData, '.myRule {\n  color: #000000;\n  float: left;\n}\n\n' +
+					'/* Inline theming parameters */\n' +
+					'#sap-ui-theme-test { background-image: url(\'data:text/plain;utf-8,%7B%22myVar%22:%22#000000%22%7D\'); }\n'
+				);
 				server.close();
 				done();
 			});
@@ -58,7 +62,7 @@ describe('less middleware', function () {
 
 		var server = http.createServer(app).listen(8080);
 
-		http.get('http://localhost:8080/mytheme/library-RTL.css', function(res) {
+		http.get('http://localhost:8080/test/themes/mytheme/library-RTL.css', function(res) {
 			assert.equal(res.headers['content-type'], 'text/css');
 
 			var responseData = '';
@@ -68,7 +72,11 @@ describe('less middleware', function () {
 			});
 
 			res.on('end', function() {
-				assert.equal(responseData, '.myRule {\n  color: #000000;\n  float: right;\n}\n');
+				assert.equal(
+					responseData, '.myRule {\n  color: #000000;\n  float: right;\n}\n\n' +
+					'/* Inline theming parameters */\n' +
+					'#sap-ui-theme-test { background-image: url(\'data:text/plain;utf-8,%7B%22myVar%22:%22#000000%22%7D\'); }\n'
+				);
 				server.close();
 				done();
 			});
@@ -85,7 +93,7 @@ describe('less middleware', function () {
 
 		var server = http.createServer(app).listen(8080);
 
-		http.get('http://localhost:8080/mytheme/library-parameters.json', function(res) {
+		http.get('http://localhost:8080/test/themes/mytheme/library-parameters.json', function(res) {
 			assert.equal(res.headers['content-type'], 'application/json');
 
 			var responseData = '';
