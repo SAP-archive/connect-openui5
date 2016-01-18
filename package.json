@@ -22,10 +22,7 @@
     "openui5"
   ],
   "author": "SAP SE",
-  "license": {
-    "type": "Apache 2.0",
-    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
-  },
+  "license": "Apache-2.0",
   "engines": {
     "node": ">= 0.10.0"
   },
