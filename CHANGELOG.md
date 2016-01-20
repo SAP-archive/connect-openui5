@@ -1,3 +1,13 @@
+# 0.5.0 (2016-01-20)
+
+### Features
+- proxy middleware
+  - Add support for modifying the remote location via environment variable [`46c1e56`](https://github.com/SAP/connect-openui5/commit/46c1e56db46357fee59ee072e0c82516d5c17e9e)
+
+### All changes
+[`0.4.1...0.5.0`](https://github.com/SAP/connect-openui5/compare/0.4.1...0.5.0)
+
+
 # 0.4.1 (2015-09-04)
 
 ### Fixes
