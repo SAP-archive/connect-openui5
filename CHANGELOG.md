@@ -1,3 +1,17 @@
+# 0.6.0 (2016-04-25)
+
+### Breaking changes
+- less middleware
+  - Set default of parser option `relativeUrls` to `true` [`4d5fca2 ` via less-openui5@0.2.0](https://github.com/SAP/connect-openui5/commit/4d5fca25954049eec4af53c8bd12c54d6ad020aa) (see [`00d892b `](https://github.com/SAP/less-openui5/commit/00d892b95c8c0401b8a61f1b1709dfc4a68cfa26))
+
+### Features
+- less middleware
+  - enable inline theming parameters [`4d5fca2`](https://github.com/SAP/connect-openui5/commit/4d5fca25954049eec4af53c8bd12c54d6ad020aa)
+
+### All changes
+[`0.5.0...0.6.0`](https://github.com/SAP/connect-openui5/compare/0.5.0...0.6.0)
+
+
 # 0.5.0 (2016-01-20)
 
 ### Features
