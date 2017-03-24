@@ -1,3 +1,16 @@
+# 0.7.0 (2017-03-23)
+
+### Breaking changes
+- Drop support for Node.js v0.10 [#13](https://github.com/SAP/connect-openui5/pull/13)
+
+### Features
+- less middleware
+  - Support theme scopes (Belize Themes) [#15](https://github.com/SAP/connect-openui5/pull/15) (via [SAP/less-openui5#10](https://github.com/SAP/less-openui5/pull/10))
+
+### All changes
+[`0.6.0...0.7.0`](https://github.com/SAP/connect-openui5/compare/0.6.0...0.7.0)
+
+
 # 0.6.0 (2016-04-25)
 
 ### Breaking changes
