@@ -1,3 +1,16 @@
+# 0.7.1 (2017-06-22)
+
+### Fixes
+- proxy middleware
+  - fix no_proxy patterns with * wildcard [#16](https://github.com/SAP/connect-openui5/pull/16)
+
+### Other changes
+- Travis CI: Test Node.js 4, 6 and 8 with npm v5 [#17](https://github.com/SAP/connect-openui5/pull/17)
+
+### All changes
+[`0.7.0...0.7.1`](https://github.com/SAP/connect-openui5/compare/0.7.0...0.7.1)
+
+
 # 0.7.0 (2017-03-23)
 
 ### Breaking changes
