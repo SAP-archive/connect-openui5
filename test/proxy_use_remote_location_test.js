@@ -26,7 +26,7 @@ var proxy = require('../lib/proxy');
 delete require.cache[require.resolve('../lib/proxy')];
 
 describe('USE remote location', function () {
-	it('should proxy from one server to the server and USE remote location', function (done) {
+	it('should proxy from one server to the server and USE remote location', function (fnDone) {
 		//check environment
 		assert.equal(proxy._env.remoteLocation,'http://localhost:8080');
 
@@ -54,6 +54,9 @@ describe('USE remote location', function () {
 		oProxyApp.use(proxy());
 		var oProxyServer = http.createServer(oProxyApp);
 		oProxyServer.listen(9000);
+		oServerToBeProxied.on('close', function() {
+			oProxyServer.close();
+		});
 
 		//should  proxy to port 8080
 		http.get('http://localhost:9000' + sExpectedPath, function (oResponse) {
@@ -66,15 +69,7 @@ describe('USE remote location', function () {
 				assert.equal(sActualPath, sExpectedPath);
 				assert.equal(sActualResponse, sExpectedResponse);
 				assert.equal(iActualStatusCode, iExpectedStatusCode);
-
-				oProxyServer.on('close', function() {
-					done();
-				});
-
-				oServerToBeProxied.on('close', function() {
-					oProxyServer.close();
-				});
-
+				oProxyServer.on('close', fnDone);
 				oServerToBeProxied.close();
 			});
 		});
