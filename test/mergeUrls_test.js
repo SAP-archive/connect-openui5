@@ -18,8 +18,8 @@
 var proxy = require('../').proxy;
 var assert = require('assert');
 
-function test(remote_location, pUrl, expected) {
-	var uri = proxy._createUri(pUrl, remote_location);
+function test(sRemoteLocation, pUrl, expected) {
+	var uri = proxy._createUri(pUrl, sRemoteLocation);
 	var url = proxy._buildRequestUrl(uri);
 	assert.equal(url, expected);
 }
