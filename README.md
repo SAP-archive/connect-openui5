@@ -71,7 +71,7 @@ Options for [less-openui5](https://github.com/SAP/less-openui5#options).
 
 ## properties
 
-Makes sure that properties files will be served with "Content-Type: text/plain; charset=ISO-8859-1".
+This middleware function ensures that properties files will be served with "Content-Type: text/plain; charset=ISO-8859-1".
 
 ## proxy
 
