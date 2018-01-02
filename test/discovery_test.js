@@ -64,7 +64,8 @@ describe('discovery middleware', function () {
 		app.use('/discovery', discovery({
 			resources: [
 				'test/fixtures/discovery/resources1',
-				'test/fixtures/discovery/resources2'
+				'test/fixtures/discovery/resources2',
+				'test/fixtures/discovery/resources3'
 			]
 		}));
 
@@ -84,6 +85,9 @@ describe('discovery middleware', function () {
 						},
 						{
 							entry: 'my/legacy/ui/lib'
+						},
+						{
+							entry: 'my/ui/l'
 						}
 					]
 				}));
@@ -100,11 +104,13 @@ describe('discovery middleware', function () {
 		app.use('/discovery', discovery({
 			resources: [
 				'test/fixtures/discovery/resources1',
-				'test/fixtures/discovery/resources2'
+				'test/fixtures/discovery/resources2',
+				'test/fixtures/discovery/resources3'
 			],
 			testresources: [
 				'test/fixtures/discovery/test-resources1',
-				'test/fixtures/discovery/test-resources2'
+				'test/fixtures/discovery/test-resources2',
+				'test/fixtures/discovery/test-resources3'
 			]
 		}));
 
@@ -128,6 +134,11 @@ describe('discovery middleware', function () {
 							lib: 'my.legacy.ui.lib',
 							name: 'MyControl.htm',
 							url: '../my/legacy/ui/lib/MyControl.htm'
+						},
+						{
+							lib: 'my.ui.l',
+							name: 'qunit/MyControl3.qunit.html',
+							url: '../my/ui/l/qunit/MyControl3.qunit.html'
 						}
 					]
 				}));
