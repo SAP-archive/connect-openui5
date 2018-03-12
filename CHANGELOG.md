@@ -1,3 +1,13 @@
+# 0.7.3 (2018-03-12)
+
+### Other changes
+- Update dependencies ([`b8d59ea`](https://github.com/SAP/connect-openui5/commit/b8d59ea8cd1e2db46b5c5f0117f02ed40aa1a097))
+- Update copyright years ([`9091d54`](https://github.com/SAP/connect-openui5/commit/9091d5459126a6080a03b5db360c31d9d30c2665))
+
+### All changes
+[`0.7.2...0.7.3`](https://github.com/SAP/connect-openui5/compare/0.7.2...0.7.3)
+
+
 # 0.7.2 (2017-07-18)
 
 ### Fixes
