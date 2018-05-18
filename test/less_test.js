@@ -44,7 +44,7 @@ describe('less middleware', function () {
 				assert.equal(
 					responseData, '.myRule {\n  color: #000000;\n  float: left;\n}\n\n' +
 					'/* Inline theming parameters */\n' +
-					'#sap-ui-theme-test { background-image: url(\'data:text/plain;utf-8,%7B%22myVar%22:%22#000000%22%7D\'); }\n'
+					'#sap-ui-theme-test { background-image: url(\'data:text/plain;utf-8,%7B%22myVar%22:%22%23000000%22%7D\'); }\n'
 				);
 				server.close();
 				done();
@@ -75,7 +75,7 @@ describe('less middleware', function () {
 				assert.equal(
 					responseData, '.myRule {\n  color: #000000;\n  float: right;\n}\n\n' +
 					'/* Inline theming parameters */\n' +
-					'#sap-ui-theme-test { background-image: url(\'data:text/plain;utf-8,%7B%22myVar%22:%22#000000%22%7D\'); }\n'
+					'#sap-ui-theme-test { background-image: url(\'data:text/plain;utf-8,%7B%22myVar%22:%22%23000000%22%7D\'); }\n'
 				);
 				server.close();
 				done();
