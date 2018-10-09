@@ -1,3 +1,12 @@
+# 0.7.5 (2018-10-09)
+
+### Other changes
+- Update less-openui5@0.6.0 [#27](https://github.com/SAP/connect-openui5/pull/27)
+
+### All changes
+[`0.7.4...0.7.5`](https://github.com/SAP/connect-openui5/compare/0.7.4...0.7.5)
+
+
 # 0.7.4 (2018-05-18)
 
 ### Other changes
