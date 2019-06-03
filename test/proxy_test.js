@@ -22,7 +22,7 @@ var proxy = require('../').proxy;
 
 describe('proxy middleware should proxy generic requests', function () {
 	it('should proxy from one server to the other', function (done) {
-		var sExpectedResponse = 'All ok!',
+		var sExpectedResponse = 'All ok',
 			sExpectedPath = '/foo/bar',
 			iExpectedStatusCode = 200,
 			oAppToBeProxied = connect(),
@@ -36,6 +36,7 @@ describe('proxy middleware should proxy generic requests', function () {
 			assert.equal(oRequest.headers['x-forwarded-port'], undefined);
 			assert.equal(oRequest.headers['x-forwarded-proto'], undefined);
 			sActualPath = oRequest.url;
+			oResponse.setHeader('Set-Cookie', ' xxxxxx a=b; secure;yyyyyyy ');
 			oResponse.end(sExpectedResponse);
 		});
 
@@ -56,6 +57,11 @@ describe('proxy middleware should proxy generic requests', function () {
 				assert.equal(sActualPath, sExpectedPath);
 				assert.equal(sActualResponse, sExpectedResponse);
 				assert.equal(iActualStatusCode, iExpectedStatusCode);
+				if (this.headers['set-cookie'].find(function(element){
+						return element === 'xxxxxx a=b; secure;yyyyyyy ';
+					})){
+                   assert.fail("Secure flag not removed from cookie");
+				}
 
 				oServerToBeProxied.close();
 				oProxyServer.close();
