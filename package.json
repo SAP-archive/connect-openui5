@@ -1,6 +1,6 @@
 {
   "name": "connect-openui5",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "description": "Connect middleware for OpenUI5",
   "scripts": {
     "lint": "eslint index.js lib test",

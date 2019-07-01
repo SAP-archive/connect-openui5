@@ -1,3 +1,13 @@
+# 0.7.7 (2019-07-01)
+
+### Fixes
+- proxy middleware
+  - Removing 'secure' flag of cookies [#50](https://github.com/SAP/connect-openui5/pull/50)
+
+### All changes
+[`0.7.6...0.7.7`](https://github.com/SAP/connect-openui5/compare/0.7.6...0.7.7)
+
+
 # 0.7.6 (2019-03-13)
 
 ### Fixes
