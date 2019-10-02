@@ -3,14 +3,14 @@ sudo: false
 
 language: node_js
 node_js:
+  - "12"
+  - "10"
   - "8"
-  - "6"
-  - "4"
 
 matrix:
   include:
     # Test latest Node.js version also with a fresh install (no package-lock.json)
-    - node_js: 8
+    - node_js: 12
       env: FRESH_INSTALL=true
 
 cache:
@@ -19,8 +19,6 @@ cache:
     - $HOME/.npm
 
 before_install:
-  # Always use npm@5
-  - npm install --global npm@^5
   # Remove package-lock.json to force a fresh install (updated dependencies)
   - if [[ ${FRESH_INSTALL} == "true" ]]; then rm package-lock.json; fi
 
