@@ -1,3 +1,12 @@
+# 0.8.0 (2019-10-14)
+
+### Breaking changes
+  - Drop support for Node.js < 8.5 [#64](https://github.com/SAP/connect-openui5/pull/64)
+
+### All changes
+[`0.7.7...0.8.0`](https://github.com/SAP/connect-openui5/compare/0.7.7...0.8.0)
+
+
 # 0.7.7 (2019-07-01)
 
 ### Fixes
