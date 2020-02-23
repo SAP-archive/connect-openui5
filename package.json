@@ -35,7 +35,7 @@
     "extend": "^3.0.0",
     "glob": "^7.1.6",
     "http-proxy": "^1.18.0",
-    "less-openui5": "^0.8.4"
+    "less-openui5": "^0.8.5"
   },
   "devDependencies": {
     "connect": "^3.7.0",
