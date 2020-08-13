@@ -15,7 +15,9 @@
   "files": [
     "index.js",
     "lib",
-    "LICENSE.txt"
+    "LICENSE.txt",
+    "LICENSES/**",
+    ".reuse/**"
   ],
   "repository": {
     "type": "git",
