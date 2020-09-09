@@ -1,27 +1,6 @@
-# Use container-based infrastructure
 sudo: false
-
 language: node_js
 node_js:
+  - "14"
   - "12"
   - "10"
-  - "8"
-
-matrix:
-  include:
-    # Test latest Node.js version also with a fresh install (no package-lock.json)
-    - node_js: 12
-      env: FRESH_INSTALL=true
-
-cache:
-  directories:
-    # Cache local npm cache files for faster install
-    - $HOME/.npm
-
-before_install:
-  # Remove package-lock.json to force a fresh install (updated dependencies)
-  - if [[ ${FRESH_INSTALL} == "true" ]]; then rm package-lock.json; fi
-
-install:
-  # Prefer online to install latest dependencies - othersise make use of the local cache
-  - if [[ ${FRESH_INSTALL} == "true" ]]; then npm install --prefer-online; else npm install --prefer-offline; fi
