@@ -52,4 +52,9 @@ describe('proxy-rewrite-cookies', function () {
 		['foo=bar; Secure; Domain=example.com; Expires=Fri, 09-Oct-2020 10:00:00 GMT; Path=/foo; Max-Age=123; SameSite=Lax; HttpOnly;']),
 		['foo=bar; Max-Age=123; Expires=Fri, 09 Oct 2020 10:00:00 GMT; HttpOnly']);
 	});
+	it('should not change/encode the value', function () {
+		assert.deepEqual(rewriteCookies(
+		['foo=bar=1']),
+		['foo=bar=1']);
+	});
 });
