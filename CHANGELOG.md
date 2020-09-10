@@ -2,10 +2,16 @@
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-A list of unreleased changes can be found [here](https://github.com/SAP/connect-openui5/compare/v0.9.0...HEAD).
+A list of unreleased changes can be found [here](https://github.com/SAP/connect-openui5/compare/v0.9.1...HEAD).
+
+<a name="v0.9.1"></a>
+## [v0.9.1] - 2020-09-10
+### Bug Fixes
+- **proxy middleware:** Remove secure, domain, path, samesite from cookies ([#91](https://github.com/SAP/connect-openui5/issues/91)) [`e9784be`](https://github.com/SAP/connect-openui5/commit/e9784be7c40670ccbb153b7e51adccb8603446d8)
+
 
 <a name="v0.9.0"></a>
-## [v0.9.0] - 2019-11-18
+## [v0.9.0] - 2019-11-19
 ### Breaking Changes
 - **less middleware:** Remove support for 'sourceMap' / 'cleancss' options [`39fa504`](https://github.com/SAP/connect-openui5/commit/39fa504b2cbc6e8273d0712b76b64466b6f8d9ce)
 
@@ -16,6 +22,7 @@ A list of unreleased changes can be found [here](https://github.com/SAP/connect-
 - Drop support for Node.js < 8.5 [`3aefa16`](https://github.com/SAP/connect-openui5/commit/3aefa16e1e3ecb88214ab8b79d1e2840b26f6dba)
 
 
+[v0.9.1]: https://github.com/SAP/connect-openui5/compare/v0.9.0...v0.9.1
 [v0.9.0]: https://github.com/SAP/connect-openui5/compare/0.8.0...v0.9.0
 [0.8.0]: https://github.com/SAP/connect-openui5/compare/0.7.7...0.8.0
 ## 0.7.7 - 2019-07-01
