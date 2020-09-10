@@ -22,7 +22,10 @@ describe('proxy middleware should proxy generic requests', function () {
 			assert.equal(oRequest.headers['x-forwarded-port'], undefined);
 			assert.equal(oRequest.headers['x-forwarded-proto'], undefined);
 			sActualPath = oRequest.url;
-			oResponse.setHeader('Set-Cookie', ' xxxxxx a=b; secure;yyyyyyy ');
+			oResponse.setHeader('Set-Cookie', [
+				'a=b; Secure; HttpOnly; Max-Age=5; SameSite=Strict',
+				'c=d; Domain=example.com; HttpOnly; Expires=expires=Fri, 09-Oct-2020 10:00:00 GMT; Path=/foo'
+			]);
 			oResponse.end(sExpectedResponse);
 		});
 
@@ -44,10 +47,13 @@ describe('proxy middleware should proxy generic requests', function () {
 				assert.equal(sActualResponse, sExpectedResponse);
 				assert.equal(iActualStatusCode, iExpectedStatusCode);
 
-				var hasSecureCookies = this.headers['set-cookie'].some(function(cookie) {
-					return cookie.includes('secure');
+				var cookies = this.headers['set-cookie'];
+				['secure', 'domain', 'path', 'samesite'].forEach(function(attribute) {
+					var hasAttribute = cookies.some(function(cookie) {
+						return cookie.toLowerCase().includes(attribute);
+					});
+					assert.ok(!hasAttribute, attribute + ' attribute should be removed from the cookies');
 				});
-				assert.ok(!hasSecureCookies, 'Secure flag removed from cookies');
 
 				oServerToBeProxied.close();
 				oProxyServer.close();
