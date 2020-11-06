@@ -2,7 +2,21 @@
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-A list of unreleased changes can be found [here](https://github.com/SAP/connect-openui5/compare/v0.9.1...HEAD).
+A list of unreleased changes can be found [here](https://github.com/SAP/connect-openui5/compare/v0.10.0...HEAD).
+
+<a name="v0.10.0"></a>
+## [v0.10.0] - 2020-11-06
+### Breaking Changes
+- Require Node.js >= 10 [`8c9f87e`](https://github.com/SAP/connect-openui5/commit/8c9f87e1012bb0c6fbf2dc8e323c7ec11bfda877)
+
+### Dependency Updates
+- Bump less-openui5 from 0.8.7 to 0.9.0 [`a8cdc7b`](https://github.com/SAP/connect-openui5/commit/a8cdc7bf1c82ba75217db1be50ff502ac3d380df)
+
+### BREAKING CHANGE
+
+Support for older Node.js releases has been dropped.
+Only Node.js v10 or higher is supported.
+
 
 <a name="v0.9.1"></a>
 ## [v0.9.1] - 2020-09-10
@@ -22,6 +36,7 @@ A list of unreleased changes can be found [here](https://github.com/SAP/connect-
 - Drop support for Node.js < 8.5 [`3aefa16`](https://github.com/SAP/connect-openui5/commit/3aefa16e1e3ecb88214ab8b79d1e2840b26f6dba)
 
 
+[v0.10.0]: https://github.com/SAP/connect-openui5/compare/v0.9.1...v0.10.0
 [v0.9.1]: https://github.com/SAP/connect-openui5/compare/v0.9.0...v0.9.1
 [v0.9.0]: https://github.com/SAP/connect-openui5/compare/0.8.0...v0.9.0
 [0.8.0]: https://github.com/SAP/connect-openui5/compare/0.7.7...0.8.0
