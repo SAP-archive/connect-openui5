@@ -1,6 +1,6 @@
 {
 	"name": "connect-openui5",
-	"version": "0.10.0",
+	"version": "0.10.1",
 	"description": "Connect middleware for OpenUI5",
 	"author": {
 		"name": "SAP SE",

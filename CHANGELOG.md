@@ -2,7 +2,10 @@
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-A list of unreleased changes can be found [here](https://github.com/SAP/connect-openui5/compare/v0.10.0...HEAD).
+A list of unreleased changes can be found [here](https://github.com/SAP/connect-openui5/compare/v0.10.1...HEAD).
+
+<a name="v0.10.1"></a>
+## [v0.10.1] - 2021-01-29
 
 <a name="v0.10.0"></a>
 ## [v0.10.0] - 2020-11-06
@@ -36,6 +39,7 @@ Only Node.js v10 or higher is supported.
 - Drop support for Node.js < 8.5 [`3aefa16`](https://github.com/SAP/connect-openui5/commit/3aefa16e1e3ecb88214ab8b79d1e2840b26f6dba)
 
 
+[v0.10.1]: https://github.com/SAP/connect-openui5/compare/v0.10.0...v0.10.1
 [v0.10.0]: https://github.com/SAP/connect-openui5/compare/v0.9.1...v0.10.0
 [v0.9.1]: https://github.com/SAP/connect-openui5/compare/v0.9.0...v0.9.1
 [v0.9.0]: https://github.com/SAP/connect-openui5/compare/0.8.0...v0.9.0
