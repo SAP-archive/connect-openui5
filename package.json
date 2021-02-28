@@ -87,12 +87,12 @@
 		"glob": "^7.1.6",
 		"http-proxy": "^1.18.1",
 		"less-openui5": "^0.10.0",
-		"set-cookie-parser": "^2.4.7"
+		"set-cookie-parser": "^2.4.8"
 	},
 	"devDependencies": {
 		"connect": "^3.7.0",
 		"depcheck": "^1.4.0",
-		"eslint": "^7.20.0",
+		"eslint": "^7.21.0",
 		"eslint-config-google": "^0.14.0",
 		"mocha": "^8.3.0",
 		"nyc": "^15.1.0",
