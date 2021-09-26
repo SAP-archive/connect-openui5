@@ -84,7 +84,7 @@
 		"async": "^3.2.1",
 		"cookie": "^0.4.1",
 		"extend": "^3.0.0",
-		"glob": "^7.1.7",
+		"glob": "^7.2.0",
 		"http-proxy": "^1.18.1",
 		"less-openui5": "^0.11.2",
 		"set-cookie-parser": "^2.4.8"
