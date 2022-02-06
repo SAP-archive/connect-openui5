@@ -82,7 +82,7 @@
 	},
 	"dependencies": {
 		"async": "^3.2.3",
-		"cookie": "^0.4.1",
+		"cookie": "^0.4.2",
 		"extend": "^3.0.0",
 		"glob": "^7.2.0",
 		"http-proxy": "^1.18.1",
