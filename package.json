@@ -81,7 +81,7 @@
 		"url": "git@github.com:SAP/connect-openui5.git"
 	},
 	"dependencies": {
-		"async": "^3.2.3",
+		"async": "^3.2.4",
 		"cookie": "^0.4.2",
 		"extend": "^3.0.0",
 		"glob": "^7.2.3",
