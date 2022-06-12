@@ -94,7 +94,7 @@
 		"depcheck": "^1.4.3",
 		"eslint": "^7.32.0",
 		"eslint-config-google": "^0.14.0",
-		"mocha": "^8.4.0",
+		"mocha": "^10.0.0",
 		"nyc": "^15.1.0",
 		"serve-static": "^1.15.0"
 	}
