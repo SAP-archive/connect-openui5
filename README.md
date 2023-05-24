@@ -6,7 +6,7 @@
 
 # DEPRECATED
 
-**⚠️ This project has been deprecated in favor of [UI5 Tooling](https://sap.github.io/ui5-tooling/) and proxy solutions that are available in the form of [custom middleware extensions from the UI5-community](https://bestofui5.org/#/packages?tokens=proxy:tag).**
+**⚠️ This project has been deprecated in favor of [UI5 Tooling](https://sap.github.io/ui5-tooling/) and proxy solutions that are available in the form of [custom middleware extensions from the UI5 community](https://bestofui5.org/#/packages?tokens=proxy:tag).**
 
 # connect-openui5
 
